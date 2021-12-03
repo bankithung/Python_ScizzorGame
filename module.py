@@ -2,14 +2,14 @@ import random
 class Sgame:
     def __init__(self,name):
         self.name =name
-    def game(self):
+    def sgame(self):
         gam = ['st','p','s']
         a=" "
         while True:
             print("-"*15)
             while True:
                 usrinputs =input("st-stone\np-paper\ns-scizzor\ne-exit\n> ").lower()
-                if usrinputs.isalpha() and (usrinputs =='s' or usrinputs == 'p' or usrinputs == 'st'or 'e'):
+                if usrinputs.isalpha() and (usrinputs =='s' or usrinputs == 'p' or usrinputs == 'st'or usrinputs =='e'):
                     
                     break
                 else:
