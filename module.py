@@ -6,14 +6,16 @@ class Sgame:
         gam = ['st','p','s']
         a=" "
         while True:
-            print("-"*15)
+            
             while True:
+                print("-"*15)
                 usrinputs =input("st-stone\np-paper\ns-scizzor\ne-exit\n> ").lower()
                 if usrinputs.isalpha() and (usrinputs =='s' or usrinputs == 'p' or usrinputs == 'st'or usrinputs =='e'):
                     
                     break
                 else:
-                    print("Re-enter\n")
+                    print("-"*15)
+                    print(f"{a:20}Re-enter")
                     continue
             compinputs = random.choice(gam)
             if(usrinputs=='e'):
